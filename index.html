@@ -1,75 +1,238 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <title>WX Page</title>
+
+    <style>
+        body {  
+            background: linear-gradient(to bottom right, rgb(102, 241, 241), rgb(251, 181, 205));
+        }
+    </style>
+</head>
 <body>
-<center>
-  <h1> Hi I'm Wei Xuan and I run away from Dinosaurs</h1>
-  <p><img src="/rundino.jpg" alt="Running from Dino" width="480" height="640"></p>
-   <br>
-  
-   <table border="1">
-	   <tr>
-	      <th colspan="3" style="text-align:center;">This is me, my computer, and me & my computer</th>
-	   </tr>
-	   <tr>
-	      <td><img src="/confused-computing.gif" alt="Confused Computing" width="372" height="207"></td>
-	      <td><img src="/messed-com.gif" alt="Messed Computer" width="282" height="210"></td>
-	      <td><img src="/computing reaction.gif" alt="Smash Computer" width="356" height="200"></td>   
-	   </tr>
-    </table>
-   <br>
-=============================================================================================================================================================
-    <h1><u>Week 1</u></h1>
-    <p><i>Excited for the new Semester!</i></p>
-    <h2> Create an Account! </h2>
-	
-<form>
-    <table>
-	  <tr><img src="/smiley.png" alt="Smiley Face" width="200" height="200"></tr>
-	  <tr>
-	      <th>Name:</th>
-	      <td><input type="text" name="fullname" /></td>
-	  </tr>
-	  <tr>
-	      <th rowspan="3" style="text-align:center;">Gender:</th>
-	      <td><label><input type="radio" name="gender" value="Male" />Male</label></td>
-	  </tr>
-	   <tr><td><label><input type="radio" name="gender" value="Female" />Female</label></td></tr>
-	   <tr><td><label><input type="radio" name="gender" value="Non-binary" />Non-binary</label></td></tr>
-	  <tr>
-	      <th>Birthday:</th>
-	      <td><input type='date' name='birthday' /></td>
-	  </tr>
-	  <tr>
-	      <th>Email:</th>
-	      <td><input type='email' name='email' /></td>
-	  </tr>
-	  <tr>
-	      <th>Password:</th>
-	      <td><input type='password' name='password' /></td>
-	  </tr>
-	  <tr>
-	      <th rowspan="11" style="text-align:center;">Favourite Foods:</th>
-	      <td><label><input type="checkbox" name="food[]" value="ChickenRice" />Chicken Rice</label></td>
-	  </tr>
-	  <tr><td><label><input type="checkbox" name="food[]" value="Mala" />Mala Xiang Guo</label></td></tr>
-	  <tr><td><label><input type="checkbox" name="food[]" value="CQFish" />Chong Qing Grilled Fish</label></td></tr>
-	  <tr><td><label><input type="checkbox" name="food[]" value="Caifan" />Caifan</label></td></tr>
-	  <tr><td><label><input type="checkbox" name="food[]" value="Yakun" />Yakun Kaya Toast</label></td></tr>
-	  <tr><td><label><input type="checkbox" name="food[]" value="APenyet" />Ayam Penyet</label></td></tr>
-	  <tr><td><label><input type="checkbox" name="food[]" value="Maggie" />Maggie Goreng</label></td></tr>
-	  <tr><td><label><input type="checkbox" name="food[]" value="IRojak" />Indian Rojak</label></td></tr>
-	  <tr><td><label><input type="checkbox" name="food[]" value="Prata" />Roti Prata</label></td></tr>
-	  <tr><td><label><input type="checkbox" name="food[]" value="Don" />Donburi</label></td></tr>
-	  <tr><td><label><input type="checkbox" name="food[]" value="JJMyeon" />Jjajangmyeon</label></td></tr>
-	    
-	  <tr><td colspan="2" style="text-align:center;">
-		<input type='submit' value='Create Account' /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	  	<input type='reset' />
-	  </td></tr>
-    </table>
-  </form>
-</center>
+    <nav class="navbar sticky-top navbar-expand-sm bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><b>COL WEI</b></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="d-sm-none nav-link" href="https://www.youtube.com/watch?v=ZV7AQfzDgmw&t=23s"><button type="button" class="btn btn-outline-success">Be My Friend?</button></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#me">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">To be updated..</a>
+                </li>
+                
+            </ul>
+
+            <a href="#myform" class="d-none d-sm-block btn btn-success" role="button">Be My Friend?</a>
+            
+        </div>
+    </nav>
+
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+        <strong>Holy guacamole!</strong> You are about to enter the world of a cool kid 😎 Are you ready?
+    </div>
+
+
+
+    <div class="container my-4 text-center" id="me">
+        <h1 class="text-primary">Hi I'm Wei Xuan and I run away from Dinosaurs</h1>
+        <p><img src="/rundino.jpg" alt="Running from Dino" width="480" height="640"></p>
+        
+
+    <br>
+        <a class="d-flex btn btn-warning p-4" data-bs-toggle="collapse" href="#carousel" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Click to see the Story of My Life
+        </a>
+
+    <div class="collapse" id="carousel">
+        <div class="card card-body">
+            <h2 class="text-center text-warning">★ Story of My Life ★</h2>
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/confused-computing.gif" class="d-block w-100" alt="Confused Computing">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>This is me.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="/messed-com.gif" class="d-block w-100" alt="Messed Computer">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>This is my computer.</p>
+                    </div>
+                </div>
+                  
+                <div class="carousel-item">
+                    <img src="/computing reaction.gif" class="d-block w-100" alt=alt="Smash Computer">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>This is me and my computer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+
+    
+
+
+
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<div class="container" id="myform"> 
+    <div class="row"> 
+        <div class="col"></div> 
+        <div class="col-6 jumbotron text-center"> 
+            <h1>Form Befriender</h1>
+            <p>Please provide the following details and press Submit!</p>
+            <img src="/smiley.png" alt="Smiley Face" width="200" height="200">
+        </div> 
+        <div class="col"></div>     
+    </div> 
+</div>
+
+<div class="container"> 
+    <div class="row"> 
+        <div class="col"></div> 
+        <div class="col-6"> 
+            <form>
+              <div class="form-group">
+                <label for="name"><b>Name</b></label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="You have a cool name?">
+            </div>
+              <br>
+
+              <div class="form-group">
+                <b>Gender</b><br>
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="male" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="male">Male</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="female" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="female">Female</label>
+                    </div>
+              </div>
+              <br>
+
+
+              <div class="form-group">
+                <label for="email"><b>Email address</b></label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="coolkidsonly@mail.com">
+            </div>
+              <br>
+              <div class="form-group">
+                <label for="pwd"><b>Password</b></label>
+                <input type="password" class="form-control" id="pwd" name="password" placeholder="Password">
+                <small id="passwordHelpInline" class="text-muted">
+                    Must be 8-20 characters long
+                </small>
+            </div>
+                <br>
+
+            <div class="form-group">
+                <label for="foods"><b>Favourite Cuisines</b></label><br>
+
+                <div class="list-group">
+                    <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                            Chicken Rice
+                    </label>
+                    <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                            Mala Xiang Guo
+                        </label>
+                    <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                            Caifan
+                        </label>
+                    <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                            Yakun Kaya Toast
+                        </label>
+                    <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                            Ayam Penyet
+                        </label>
+                    <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                            Maggie Goreng
+                        </label>
+                    <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                            Indian Rojak
+                        </label>
+                    <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                            Roti Prata
+                        </label>
+                    <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                            Donburi
+                        </label>
+                </div>
+
+
+
+                <br>
+                    <a href="https://youtu.be/TKg8GSsPSMg?t=53" class="btn btn-primary" role="button">Submit</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input class="btn btn-primary" type="reset" value="Reset">
+                </div>
+            <br>
+
+            </form>
+           
+            
+            </div>
+        <div class="col"></div>  
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
